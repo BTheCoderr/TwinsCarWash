@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-navy relative overflow-hidden"
+      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-charcoal relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
@@ -130,7 +130,7 @@ export default function Contact() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full bg-dark-navy border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full bg-dark-charcoal border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors"
               placeholder="your@email.com"
             />
           </div>
@@ -147,7 +147,7 @@ export default function Contact() {
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className="w-full bg-dark-navy border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full bg-dark-charcoal border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors"
             >
               <option value="">Select a service</option>
               <option value="express">Express Wash</option>

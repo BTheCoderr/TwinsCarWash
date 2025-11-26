@@ -56,7 +56,7 @@ export default function WhyUs() {
           {benefits.map((benefit, index) => (
             <div
               key={benefit.title}
-              className="text-center p-6 md:p-8 bg-dark-navy/50 rounded-xl border border-offwhite/10 hover:border-accent-orange/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up"
+              className="text-center p-6 md:p-8 bg-dark-charcoal/50 rounded-xl border border-offwhite/10 hover:border-accent-orange/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="text-5xl mb-4">{benefit.icon}</div>

@@ -50,7 +50,7 @@ export default function Reviews() {
           {reviews.map((review, index) => (
             <div
               key={review.name}
-              className="bg-dark-navy/50 backdrop-blur-sm border border-offwhite/10 rounded-xl p-6 md:p-8 hover:border-accent-orange/50 transition-all duration-300 animate-slide-up"
+              className="bg-dark-charcoal/50 backdrop-blur-sm border border-offwhite/10 rounded-xl p-6 md:p-8 hover:border-accent-orange/50 transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Stars */}

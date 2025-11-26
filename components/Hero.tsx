@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 md:pt-24"
     >
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dark-navy via-dark-charcoal to-dark-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-dark-charcoal via-dark-black to-dark-black"></div>
       
       {/* Background image placeholder - can be replaced with actual car photo */}
       <div className="absolute inset-0 opacity-10">

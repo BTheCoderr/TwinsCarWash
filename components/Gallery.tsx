@@ -14,7 +14,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-navy"
+      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-charcoal"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
@@ -37,7 +37,7 @@ export default function Gallery() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Placeholder for image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-dark-charcoal via-dark-navy to-dark-black flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-dark-charcoal via-dark-charcoal to-dark-black flex items-center justify-center">
                 <div className="text-center p-6">
                   <div className="text-5xl mb-3 opacity-50">🚗</div>
                   <p className="text-offwhite/60 text-sm font-medium">{item.title}</p>

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-navy relative overflow-hidden"
+      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-charcoal relative overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">

@@ -35,7 +35,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-navy"
+      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-charcoal"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
