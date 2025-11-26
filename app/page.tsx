@@ -5,8 +5,10 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import About from '@/components/About'
 import WhyUs from '@/components/WhyUs'
+import AdditionalServices from '@/components/AdditionalServices'
 import Gallery from '@/components/Gallery'
 import Reviews from '@/components/Reviews'
+import BottomCTA from '@/components/BottomCTA'
 import Contact from '@/components/Contact'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -29,8 +31,10 @@ export default function Home() {
       <About />
       <Services />
       <WhyUs />
+      <AdditionalServices />
       <Gallery />
       <Reviews />
+      <BottomCTA />
       <Contact />
       <Footer />
     </main>

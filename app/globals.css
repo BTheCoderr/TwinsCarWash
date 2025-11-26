@@ -13,6 +13,11 @@
     font-family: var(--font-inter);
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    overflow: visible;
+    text-overflow: clip;
+  }
+
   html {
     scroll-behavior: smooth;
   }

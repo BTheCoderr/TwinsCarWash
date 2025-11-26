@@ -2,34 +2,34 @@
 
 const benefits = [
   {
-    icon: '✨',
-    title: 'Detail-Obsessed',
-    description: 'Every surface, every corner. We don\'t miss a spot.',
-  },
-  {
-    icon: '🤝',
-    title: 'Neighborhood Trusted',
-    description: 'Local business, local pride. We know Providence.',
-  },
-  {
     icon: '💎',
-    title: 'Premium Products',
-    description: 'Top-tier supplies without the premium price tag.',
+    title: 'Quality Products',
+    description: 'At Twin\'s Car Wash, we exclusively use premium-grade products to guarantee exceptional results and long-lasting satisfaction for your vehicle.',
+  },
+  {
+    icon: '📅',
+    title: 'Easy Scheduling',
+    description: 'At Twin\'s Car Wash, we offer an effortless booking system, making it simple for you to schedule expert car care at your convenience.',
+  },
+  {
+    icon: '👨‍🔧',
+    title: 'Trained Professionals',
+    description: 'At Twin\'s Car Wash, our team comprises highly skilled professionals who undergo rigorous training, ensuring every aspect of your vehicle receives expert attention and care.',
+  },
+  {
+    icon: '🚗',
+    title: 'Fully Mobile Service',
+    description: 'Experience the ultimate convenience with Twin\'s Car Wash fully mobile service, bringing top-tier car care directly to your doorstep, whether at home or work.',
   },
   {
     icon: '⚡',
-    title: 'Fast & Efficient',
-    description: 'Quality work that fits your schedule.',
+    title: 'Quick Response',
+    description: 'Count on Twin\'s Car Wash for swift and efficient service, with our team dedicated to providing prompt responses and timely assistance for all your car care needs.',
   },
   {
-    icon: '🎵',
-    title: 'Good Vibes',
-    description: 'Good music, good energy, great results.',
-  },
-  {
-    icon: '🛡️',
-    title: 'Satisfaction Guaranteed',
-    description: 'If you\'re not happy, we\'ll make it right.',
+    icon: '❤️',
+    title: 'The Best Care',
+    description: 'With a commitment to excellence ingrained in everything we do, Twin\'s Car Wash delivers nothing short of the best care for your vehicle, ensuring it receives unparalleled attention and maintenance.',
   },
 ]
 
@@ -37,7 +37,7 @@ export default function WhyUs() {
   return (
     <section
       id="why-us"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-charcoal"
+      className="py-24 md:py-32 px-6 sm:px-8 lg:px-10 bg-dark-charcoal"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
@@ -48,7 +48,7 @@ export default function WhyUs() {
             </span>
           </h2>
           <p className="text-offwhite/80 text-lg md:text-xl max-w-2xl mx-auto">
-            More than just a car wash. We're your neighborhood detail experts.
+            Choose Twin's Car Wash for unmatched expertise and dedication to perfecting your vehicle, ensuring it stands out with impeccable quality and lasting beauty on every journey.
           </p>
         </div>
 
@@ -56,14 +56,14 @@ export default function WhyUs() {
           {benefits.map((benefit, index) => (
             <div
               key={benefit.title}
-              className="text-center p-6 md:p-8 bg-dark-charcoal/50 rounded-xl border border-offwhite/10 hover:border-accent-orange/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up"
+              className="text-center p-6 sm:p-8 bg-dark-charcoal/50 rounded-xl border border-offwhite/10 hover:border-accent-orange/50 transition-all duration-300 hover:transform hover:scale-105 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="text-5xl mb-4">{benefit.icon}</div>
-              <h3 className="text-xl md:text-2xl font-bold text-offwhite mb-3">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-offwhite mb-3 break-words">
                 {benefit.title}
               </h3>
-              <p className="text-offwhite/70 leading-relaxed">
+              <p className="text-offwhite/70 leading-relaxed text-sm sm:text-base">
                 {benefit.description}
               </p>
             </div>

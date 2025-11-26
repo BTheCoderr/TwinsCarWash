@@ -26,16 +26,16 @@ export default function Navigation({ isScrolled }: NavigationProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 md:h-20 gap-2 sm:gap-4 min-w-0">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-accent-orange to-accent-silver bg-clip-text text-transparent hover:scale-105 transition-transform"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-accent-orange to-accent-silver bg-clip-text text-transparent hover:scale-105 transition-transform truncate min-w-0"
           >
             Twin's Car Wash
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6 flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
               className="text-offwhite hover:text-accent-orange transition-colors font-medium text-sm lg:text-base"

@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-charcoal relative overflow-hidden"
+      className="py-24 md:py-32 px-6 sm:px-8 lg:px-10 bg-dark-charcoal relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
@@ -50,21 +50,25 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          <div className="text-center p-6 bg-dark-charcoal/50 backdrop-blur-sm rounded-2xl border border-offwhite/10">
+          <div className="text-center p-6 sm:p-8 bg-dark-charcoal/50 backdrop-blur-sm rounded-2xl border border-offwhite/10">
             <div className="text-3xl mb-3">📍</div>
             <h3 className="font-semibold text-offwhite mb-2">Location</h3>
-            <p className="text-offwhite/70 text-sm">
-              Providence, Rhode Island
+            <p className="text-offwhite/70 text-sm break-words">
+              702 Douglas Ave<br />
+              Providence, RI 02908
             </p>
           </div>
-          <div className="text-center p-6 bg-dark-charcoal/50 backdrop-blur-sm rounded-2xl border border-offwhite/10">
+          <div className="text-center p-6 sm:p-8 bg-dark-charcoal/50 backdrop-blur-sm rounded-2xl border border-offwhite/10">
             <div className="text-3xl mb-3">📞</div>
             <h3 className="font-semibold text-offwhite mb-2">Call Us</h3>
-            <p className="text-offwhite/70 text-sm">
-              (401) 555-WASH
-            </p>
+            <a href="tel:401-771-9436" className="text-accent-orange hover:text-accent-orange-light text-sm block mb-1">
+              (401) 771-9436
+            </a>
+            <a href="tel:401-660-8596" className="text-accent-orange hover:text-accent-orange-light text-sm block">
+              (401) 660-8596
+            </a>
           </div>
-          <div className="text-center p-6 bg-dark-charcoal/50 backdrop-blur-sm rounded-2xl border border-offwhite/10">
+          <div className="text-center p-6 sm:p-8 bg-dark-charcoal/50 backdrop-blur-sm rounded-2xl border border-offwhite/10">
             <div className="text-3xl mb-3">✉️</div>
             <h3 className="font-semibold text-offwhite mb-2">Email</h3>
             <p className="text-offwhite/70 text-sm">
@@ -75,7 +79,7 @@ export default function Contact() {
 
         <form
           onSubmit={handleSubmit}
-          className="bg-dark-charcoal/50 backdrop-blur-sm border border-offwhite/10 rounded-2xl p-6 md:p-8 space-y-6"
+          className="bg-dark-charcoal/50 backdrop-blur-sm border border-offwhite/10 rounded-2xl p-6 sm:p-8 space-y-6 max-w-3xl mx-auto"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -92,7 +96,7 @@ export default function Contact() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full bg-dark-navy border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors"
+                className="w-full bg-dark-charcoal border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors placeholder:text-offwhite/40"
                 placeholder="Your name"
               />
             </div>
@@ -110,7 +114,7 @@ export default function Contact() {
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full bg-dark-navy border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors"
+                className="w-full bg-dark-charcoal border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors placeholder:text-offwhite/40"
                 placeholder="(401) 555-0123"
               />
             </div>
@@ -130,7 +134,7 @@ export default function Contact() {
               required
               value={formData.email}
               onChange={handleChange}
-                className="w-full bg-dark-charcoal border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors"
+                className="w-full bg-dark-charcoal border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors placeholder:text-offwhite/40"
               placeholder="your@email.com"
             />
           </div>
@@ -171,7 +175,7 @@ export default function Contact() {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              className="w-full bg-dark-navy border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-gold transition-colors resize-none"
+              className="w-full bg-dark-charcoal border border-offwhite/20 rounded-lg px-4 py-3 text-offwhite focus:outline-none focus:border-accent-orange transition-colors resize-none placeholder:text-offwhite/40"
               placeholder="Tell us about your car or any special requests..."
             />
           </div>

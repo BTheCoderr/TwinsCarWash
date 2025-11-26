@@ -25,13 +25,43 @@ const reviews = [
     rating: 5,
     text: 'I\'ve tried a few places, but Twin\'s is the real deal. My car looks brand new every time.',
   },
+  {
+    name: 'Michael R.',
+    location: 'Providence, RI',
+    rating: 5,
+    text: 'Highly recommended this place. Really pleased. The car was so clean, shining and smells so good, just like the first time I got it from the stand.',
+  },
+  {
+    name: 'Amanda T.',
+    location: 'Providence, RI',
+    rating: 5,
+    text: 'Cannot recommend Twin\'s highly enough! Left an older vehicle in to get some well deserved TLC and interior and exterior came out looking like new.',
+  },
+  {
+    name: 'Robert C.',
+    location: 'Providence, RI',
+    rating: 5,
+    text: 'Brilliant service! Really went above & beyond... my car has never looked better! Thank you so much! Highly recommend',
+  },
+  {
+    name: 'Lisa P.',
+    location: 'Providence, RI',
+    rating: 5,
+    text: 'Left my car in for a full exterior valet today. It was well overdue but boy was a good job done on it! It looks better than new. Highly recommend.',
+  },
+  {
+    name: 'James W.',
+    location: 'Providence, RI',
+    rating: 5,
+    text: 'Fantastic job restoring my headlights would highly recommend for anything',
+  },
 ]
 
 export default function Reviews() {
   return (
     <section
       id="reviews"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-dark-charcoal"
+      className="py-24 md:py-32 px-6 sm:px-8 lg:px-10 bg-dark-charcoal"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
@@ -46,11 +76,11 @@ export default function Reviews() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {reviews.map((review, index) => (
             <div
               key={review.name}
-              className="bg-dark-charcoal/50 backdrop-blur-sm border border-offwhite/10 rounded-xl p-6 md:p-8 hover:border-accent-orange/50 transition-all duration-300 animate-slide-up"
+              className="bg-dark-charcoal/50 backdrop-blur-sm border border-offwhite/10 rounded-xl p-6 sm:p-8 hover:border-accent-orange/50 transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Stars */}
@@ -68,7 +98,7 @@ export default function Reviews() {
               </div>
 
               {/* Review Text */}
-              <p className="text-offwhite/90 mb-6 leading-relaxed text-base md:text-lg">
+              <p className="text-offwhite/90 mb-6 leading-relaxed text-sm sm:text-base md:text-lg break-words">
                 "{review.text}"
               </p>
 
