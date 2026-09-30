@@ -1,5 +1,11 @@
 # Twin's Car Wash - Landing Page
 
+<!-- repo-intro:start -->
+**Project snapshot:** Twin's Car Wash is a premium, mobile-first landing page for a Providence car-wash and detailing business, built around strong branding, clear services, and fast booking/contact paths.
+
+**What it demonstrates:** Next.js · React · TypeScript · Tailwind CSS · local-service conversion UX.
+<!-- repo-intro:end -->
+
 A high-converting, mobile-first landing page for Twin's Car Wash - a Black-Men-owned premium car wash and detailing service in Providence, Rhode Island.
 
 ## Features
